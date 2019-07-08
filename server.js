@@ -11,6 +11,11 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
+var http = require("http");
+setInterval(function() {
+    http.get("joseph-lee.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
+
 // http://www.sqlitetutorial.net/sqlite-nodejs/connect/
 // will create the db if it does not exist
 var db = new sqlite3.Database('db/database.db', (err) => {
