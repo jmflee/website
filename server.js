@@ -635,7 +635,8 @@ app.post('/api/user/edit_lastname/:username', function (req, res) {
 });
 
 app.listen(port, function () {
-  	console.log('Example app listening on port '+port);
+	var port_number = server.listen(process.env.PORT || 3000);
+  	console.log('Example app listening on port '+port_number);
 });
 
 // db.close();
