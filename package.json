@@ -4,6 +4,7 @@
   "description": "Joseph's Website for Raisins",
   "main": "ww_node.js",
   "dependencies": {
+    "node-pre-gyp install": "^0.6.24",
     "bcrypt": "3.0.6",
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
