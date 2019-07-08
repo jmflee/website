@@ -12,6 +12,7 @@
     "jquery": "^3.4.1",
     "jquery.easing": "^1.4.1",
     "node-pre-gyp": "^0.13.0",
+    "openssl": "^1.1.0",
     "popper.js": "^1.14.7",
     "react": "^16.3.0",
     "sqlite3": "^4.0.9"
