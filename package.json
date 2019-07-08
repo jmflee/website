@@ -4,17 +4,17 @@
   "description": "Joseph's Website for Raisins",
   "main": "ww_node.js",
   "dependencies": {
-    "node-pre-gyp install": "^0.6.24",
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "bcrypt": "3.0.6",
     "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "react": "^16.3.0",
-    "sqlite3": "^4.0.9",
-    "@fortawesome/fontawesome-free": "^5.9.0",
     "bootstrap": "^4.3.1",
+    "express": "^4.16.2",
     "jquery": "^3.4.1",
     "jquery.easing": "^1.4.1",
-    "popper.js": "^1.14.7"
+    "node-pre-gyp": "^0.13.0",
+    "popper.js": "^1.14.7",
+    "react": "^16.3.0",
+    "sqlite3": "^4.0.9"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
