@@ -634,8 +634,8 @@ app.post('/api/user/edit_lastname/:username', function (req, res) {
 	});
 });
 
-app.listen(port, function () {
-	var port_number = server.listen(process.env.PORT || 3000);
+var port_number = app.listen(process.env.PORT || 3000);
+app.listen(port_number, function () {
   	console.log('Example app listening on port '+port_number);
 });
 
