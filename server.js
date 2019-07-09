@@ -12,9 +12,18 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 var http = require("http");
-setInterval(function() {
-    http.get("www.jlees.me");
-}, 300000); // every 5 minutes (300000)
+
+try {
+	setInterval(function() {
+		https.get("www.jlees.me/", function(response) {
+			console.log(response.statusCode);
+		}).on("error", function(error) {
+			console.log(error.message);
+		});
+	}, 300000); // every 5 minutes (300000)
+} catch(e) {
+    console.log(e);
+}
 
 // http://www.sqlitetutorial.net/sqlite-nodejs/connect/
 // will create the db if it does not exist
