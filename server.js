@@ -15,7 +15,7 @@ var http = require("http");
 
 try {
 	setInterval(function() {
-		https.get("www.jlees.me/", function(response) {
+		http.get("www.jlees.me/", function(response) {
 			console.log(response.statusCode);
 		}).on("error", function(error) {
 			console.log(error.message);
