@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 var http = require("http");
 setInterval(function() {
-    http.get("joseph-lee.herokuapp.com");
+    http.get("www.jlees.me");
 }, 300000); // every 5 minutes (300000)
 
 // http://www.sqlitetutorial.net/sqlite-nodejs/connect/
