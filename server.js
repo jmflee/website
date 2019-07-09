@@ -15,7 +15,7 @@ var http = require("http");
 
 try {
 	setInterval(function() {
-		http.get("www.jlees.me/", function(response) {
+		http.get("http://joseph-lee.herokuapp.com/", function(response) {
 			console.log(response.statusCode);
 		}).on("error", function(error) {
 			console.log(error.message);
