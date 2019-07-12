@@ -26,3 +26,21 @@
   });
 
 })(jQuery); // End of use strict
+
+
+function bigImage () {  
+  for (i = 0; i < document.images.length; i++) {
+    var image = document.images[i];
+    console.log(image.src);
+    var bigImage = document.createElement("img");
+
+    bigImage.onload = function() {
+      image.src = this.src;
+      image.className = "noBlur";
+    }
+
+    setTimeout(function() {
+      bigImage.src = "big/" + image.src;
+    }, 50);
+  }
+}
