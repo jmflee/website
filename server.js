@@ -647,9 +647,10 @@ app.post('/api/user/edit_lastname/:username', function (req, res) {
 	});
 });
 
-var port_number = app.listen(process.env.PORT || 3000);
-app.listen(port_number, function () {
-  	console.log('Example app listening on port '+port_number);
-});
+app.set( 'port', ( process.env.PORT || 3000 ));
 
+// Start node server
+app.listen( app.get( 'port' ), function() {
+  console.log( 'Node server is running on port ' + app.get( 'port' ));
+  });
 // db.close();
