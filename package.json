@@ -4,21 +4,21 @@
   "description": "Joseph's Website for Raisins",
   "main": "server.js",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
-    "bcrypt": "^3.0.6",
-    "body-parser": "^1.18.2",
-    "bootstrap": "^4.3.1",
-    "express": "^4.16.2",
-    "jquery": "^3.4.1",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "bootstrap": "^4.6.1",
+    "express": "^4.17.2",
+    "jquery": "^3.6.0",
     "jquery.easing": "^1.4.1",
     "node-pre-gyp": "^0.14.0",
     "openssl": "^1.1.0",
-    "popper.js": "^1.16.0",
-    "react": "^16.11.0",
-    "sqlite3": "^4.1.0"
+    "popper.js": "^1.16.1",
+    "react": "^16.14.0",
+    "sqlite3": "^4.2.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.7",
     "merge-stream": "^2.0.0"
   },
   "scripts": {
